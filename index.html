@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <title>Middle Earth Strategy Battle Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Middle Earth Strategy Battle Game">
+    <meta name="keywords"
+      content="Middle Earth Strategy Battle Game, Games Workshop, Seigneur des Anneaux, Lord of the Rings, Hobbit, SDA, SdA, MESBG, SBG, GW, Games Workshop, figurines, wargame, jeu de figurines, jeu de plateau, jeu de stratégie, jeu de bataille, jeu de guerre, jeu de société, jeu de rôle, jeu de cartes, jeu de dés">
+    <meta name="author" content="Alexandre RUIZ">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/favico.jpg">
+  </head>
+
+  <body>
+    <div class="mesbg-viewport">
+      <!-- Background website -->
+      <div class="mesbg-background">
+        <div class="blur"></div>
+      </div>
+
+      <!-- Top navigation -->
+      <div class="mesbg-fixed-navbar">
+        <nav class="mesbg-navbar">
+          <img src="assets/logo.jpg" alt="Middle Earth Strategy Battle Game" height="44px" class="mesbg-logo">
+          <span class="mesbg-space"></span>
+          <img src="assets/intro.jpg" alt="Games Workshop" height="44px">
+        </nav>
+        <div class="mesbg-border-bottom"></div>
+      </div>
+
+      <!-- Main content -->
+      <main class="mesbg-main">
+        <div class="mesbg-layout">
+          <div class="mesbg-side">
+            <div class="mesbg-padding-small">
+              <div>
+                Bienvenue sur le site web dédié au jeu de figurines <strong>Middle Earth Strategy Battle Game</strong>
+                par
+                <a style="color: #eec91e" href="https://games-workshop.com"><strong>Games Workshop</strong></a>.
+              </div>
+
+              <div style="margin-top: 64px;">
+                <div>
+                  <a style="color: #eec91e" href="index.html">Accueil</a>
+                </div>
+              </div>
+
+              <div style="margin-top: 32px;">
+                <div style="margin-bottom: 8px;">Ressources</div>
+
+                <div>
+                  <a style="color: #eec91e" href="wallpapers.html">Fonds d'écran</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mesbg-side-br"></div>
+          <div class="mesbg-content">
+            <div class="mesbg-max-w">
+              <div style="margin-top: 32px;text-align: center;">
+                <img src="./assets/latest/title.jpg" style="width: 100%;margin-bottom: 44px;" alt="">
+                <img src="./assets/fotr/fotr-scenes.jpg" style="width: 100%;margin-bottom: 32px;" alt="">
+              </div>
+              <div>
+                Le jeu de bataille Le Seigneur des Anneaux vous donne la chance de revivre les aventures des films et
+                des livres du même nom. Vous avez toujours rêvé de reconstituer le siège du Gouffre de Helm? À présent
+                vous
+                pouvez! Frodo et Sam atteindront-ils le Mordor sains et saufs? Jouez et vous serez en mesure d'en
+                décider! Pour cela, vous n'aurez besoin que d'un adversaire, une poignée de dés, une surface plane et
+                bien
+                entendu quelques figurines de la gamme Le Seigneur des Anneaux. Vous êtes prêts à faire les premiers pas
+                dans
+                les légendes de la Terre du Milieu!
+              </div>
+              <div class="mesbg-divider"></div>
+              <div style="display:flex;align-items: center;justify-content: center;">
+                <img src="./assets/latest/modelisme.jpg" class="mesbg-zoom" width="84">
+                <img src="./assets/latest/peinture.jpg" class="mesbg-zoom" width="84">
+                <img src="./assets/latest/decor.jpg" class="mesbg-zoom" width="84">
+                <img src="./assets/latest/jeu.jpg" class="mesbg-zoom" width="84">
+              </div>
+              <div class="mesbg-divider"></div>
+              <div>
+                <div style="display: flex;gap: 8px;flex-direction: column;">
+                  <div style="text-align: left;">
+                    <a href="wallpapers.html">Fonds d'écran</a>
+                  </div>
+                  <div style="display: flex;gap: 4px;">
+                    <div>
+                      <img src="./assets/latest/wallpapers-promo.jpg" height="84" alt="">
+                    </div>
+                    <div>
+                      <div style="display: flex;justify-content: center;align-items: center;gap: 8px;max-width: 220px;">
+                        <img src="./assets/latest/wallpapers-link.jpg" height="24" alt="">
+                        <small>Personnalisez votre ordinateur avec l'un de ces fonds d'écrans.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mesbg-divider"></div>
+              <div>
+                Choisissez votre camp et préparez-vous à la bataille! Les forces du bien et du mal s'affrontent dans un
+                jeu de figurines épique. Les armées de la Terre du Milieu se préparent à la guerre, tandis que les
+                forces de Sauron se rassemblent pour l'assaut final. Qui sortira victorieux de cette bataille
+                légendaire? C'est à vous de décider!
+              </div>
+              <div>
+                <img src="assets/mines-of-moria/box-raw.jpg" width="100%" style="margin-top: 54px;margin-bottom:128px;"
+                  alt="">
+              </div>
+            </div>
+          </div>
+          <div class="mesbg-side-bl"></div>
+          <div class="mesbg-side">
+          </div>
+      </main>
+
+      <div class="mesbg-border-bottom"></div>
+      <footer class="mesbg-footer">
+        <div class="mesbg-padding">
+          <label for="theme-selector">Choix du thème</label>
+          <select name="theme-selector" id="theme-selector" onchange="onThemeChange(this)">
+            <option value="latest">Défaut</option>
+            <option value="fotr">Fellowship of the Ring</option>
+            <option value="ttt">The Two Towers</option>
+            <option value="rotk">Return of the King</option>
+          </select>
+          <hr>
+          <!-- <select name="language-selector" id="language-selector" onchange="onLanguageChange(this)">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+          </select>
+          <hr> -->
+          <div class="mesbg-cgu">
+            Site web créé par une simple fan du Seigneur des Anneaux et du jeu de figurines Middle Earth Strategy Battle
+            Game par Games Workshop. L'usage des photos et des logos est purement informatif et non commercial.
+            Tout le contenu appartient à Games Workshop et à leurs partenaires. Site web non officiel. Tous droits
+            réservés. Ce site web n'est pas approuvé par Games Workshop. Les images utilisées sont la propriété de Games
+            Workshop et de leurs partenaires.
+            Les sources des images sont les suivantes : Games Workshop, Forge World, Black Library, Warhammer Community,
+            Lord of the Rings Wiki, The One Wiki to Rule Them All, etc.
+            Les source seront citées dans la mesure du possible. Si vous êtes le propriétaire d'une image et que vous
+            souhaitez qu'elle soit retirée, veuillez me contacter. Merci. Si vous êtes encore en train de lire ce texte,
+            c'est que vous êtes vraiment curieux. Bravo à vous !
+          </div>
+          <br>
+          <div class="mesbg-cgu">
+            Pour information technique, le site est construit en pur HTML. Aucun framework n'a été utilisé. Le site est
+            hébergé directement sur Github Pages.
+            Pour les plus tech d'entre vous, j'ai voulu aller à l'essentiel et ne pas surcharger le site avec des
+            technologies inutiles. Le site n'est pas responsive et demande une résolution minimale de 1024, comme à
+            l'époque.
+            Le but étant ici de rester dans l'esprit du jeu de figurines Middle Earth Strategy Battle Game et d'interet
+            à
+            ses débuts.
+            Le code source est disponible sur Github. N'hésitez pas à me contacter pour toute question ou suggestion.
+            Le but ici est de partager ma passion pour le jeu de figurines Middle Earth Strategy Battle Game et de créer
+            une communauté de fans.
+            Merci à tous pour votre soutien et votre intérêt pour ce site. A bientôt pour de nouvelles mises à jour !
+            Pour vous récompenser d'être resté jusque ici, voici le <a
+              href="https://web.archive.org/web/20051015171305/http://fr.games-workshop.com/lotr/index.asp">lien</a>
+            d'inspiration du site basé sur les archives de GW. Amusez-vous bien !
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const themeParam = new URLSearchParams(window.location.search);
+      const theme = themeParam.get('theme') ?? 'latest';
+      const themeSelector = document.getElementById('theme-selector');
+      themeSelector.value = theme;
+      updateBackground(theme);
+
+      function onThemeChange(event) {
+        const themeParam = new URLSearchParams(window.location.search);
+        themeParam.set('theme', event.value);
+        window.location.search = themeParam.toString();
+        updateBackground(event.value);
+      }
+
+      function updateBackground(theme) {
+        const backgrounds = document.querySelectorAll('.mesbg-side');
+        backgrounds.forEach((background) => {
+          background.style.backgroundImage = `url('assets/${theme}/background.jpg')`;
+        });
+      }
+
+      // const urlParams = new URLSearchParams(window.location.search);
+      // const lang = urlParams.get('lang') ?? 'fr';
+      // const languageSelector = document.getElementById('language-selector');
+      // languageSelector.value = lang;
+
+      // function onLanguageChange(event) {
+      //   const urlParams = new URLSearchParams(window.location.search);
+      //   urlParams.set('lang', event.value);
+      //   window.location.search = urlParams.toString();
+      // }
+    </script>
+  </body>
+
+</html>

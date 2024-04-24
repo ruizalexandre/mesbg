@@ -1,0 +1,180 @@
+:root {
+  --mesbg-border-size: 14px;
+  --mesbg-nav-height: 52px;
+}
+
+/* 
+ * Main style 
+ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mesbg-background {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.blur {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100vh;
+  width: 100%;
+}
+
+.mesbg-viewport {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* 
+ * Utils 
+ */
+.mesbg-space {
+  flex-grow: 1;
+}
+
+.mesbg-padding {
+  padding: 16px;
+}
+
+.mesbg-padding-small {
+  padding: 8px;
+}
+
+.mesbg-divider {
+  background-image: url("latest/divider.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: var(--mesbg-border-size);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.mesbg-border-bottom {
+  background-image: url("latest/border-bottom.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  height: var(--mesbg-border-size);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mesbg-side-br {
+  background-image: url("latest/border-side.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  height: 100%;
+  width: var(--mesbg-border-size);
+  min-width: var(--mesbg-border-size);
+  max-width: var(--mesbg-border-size);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mesbg-side-bl {
+  background-image: url("latest/border-side.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  height: 100%;
+  width: var(--mesbg-border-size);
+  min-width: var(--mesbg-border-size);
+  max-width: var(--mesbg-border-size);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * Navbar
+ */
+.mesbg-navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  height: var(--mesbg-nav-height);
+  background-color: black;
+}
+
+.mesbg-fixed-navbar {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mesbg-logo {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+}
+
+/*
+ * Footer
+ */
+.mesbg-footer {
+  background-color: #e7e7e7;
+}
+
+.mesbg-cgu {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+/*
+ * Main layout
+ */
+.mesbg-main {
+  background-color: white;
+  min-height: calc(100vh - var(--mesbg-nav-height) - var(--mesbg-border-size));
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.mesbg-layout {
+  display: flex;
+  width: 100%;
+}
+
+.mesbg-content {
+  padding: 16px;
+  flex: 1 1 auto;
+  font-size: 14px;
+}
+
+.mesbg-max-w {
+  max-width: 480px;
+  margin: auto;
+}
+
+.mesbg-side {
+  width: 135px;
+  min-width: 135px;
+  color: white;
+  background-image: url("fotr/background.jpg");
+  background-repeat: repeat;
+  min-height: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+/* Create class to zoom on hover */
+.mesbg-zoom {
+  cursor: pointer;
+  transition: transform 0.2s;
+  transform: scale(0.85);
+}
+
+.mesbg-zoom:hover {
+  transform: scale(1);
+}
